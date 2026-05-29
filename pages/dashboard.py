@@ -5,6 +5,8 @@ from utils import get_enriched_df, BOROUGH_COLORS, ROOM_COLORS, PLOT_LAYOUT
 import copy
 
 def render():
+    from utils import inject_styles
+    inject_styles()
     df = get_enriched_df()
 
     st.markdown("""
