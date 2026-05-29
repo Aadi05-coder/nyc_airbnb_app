@@ -242,6 +242,8 @@ def train_models():
 
 
 def render():
+    from utils import inject_styles
+    inject_styles()
     st.markdown("<style>[data-testid='stSidebarNav']{display:none!important}</style>", unsafe_allow_html=True)
 
     df = get_enriched_df()
